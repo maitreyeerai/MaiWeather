@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>MaiWeather</title>
+</head>
+
+<body class="">
+    <main>
+        <div class="sun">
+            <svg width="80%" viewBox="0 0 90.71 90.71">
+                <g>
+                    <circle opacity="0.1" fill="#FFECDC" cx="45.355" cy="45.354" r="43.212" />
+                    <circle opacity="0.3" fill="#FFEBDE" cx="45.355" cy="45.354" r="31.131" />
+                    <circle id="sun" fill="#f9db5a" cx="45.355" cy="45.354" r="21.374" />
+                </g>
+            </svg>
+        </div>
+        <div class="stars">
+            <svg width="100%" viewBox="0 0 100 40">
+                <g>
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="97.067" cy="11.361" rx="0.527" ry="0.632" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="2.144" cy="3.901" rx="0.528" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="14.743" cy="10.455" rx="0.527" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="66.439" cy="9.407" rx="0.528" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="77.518" cy="1.332" rx="0.528" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="82.514" cy="13.459" rx="0.528" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="55.514" cy="13.459" rx="0.528" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="26.514" cy="2.459" rx="0.528" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="1.514" cy="19.459" rx="0.528" ry="0.631" />
+                    <ellipse opacity="0.5" fill="#FFFFFF" cx="20" cy="20.459" rx="0.528" ry="0.631" />
+                </g>
+            </svg>
+        </div>
+        <div class="moon">
+            <svg width="15%" viewBox="0 0 15.59 19.28">
+                <path opacity="0.8" fill="#FFFFFF"
+                    d="M13.718,16.993c-5.085,0-9.208-4.122-9.208-9.208c0-2.97,1.407-5.608,3.589-7.292  C3.722,1.205,0.381,5,0.381,9.579c0,5.086,4.123,9.208,9.209,9.208c2.116,0,4.063-0.716,5.619-1.916  C14.722,16.95,14.226,16.993,13.718,16.993z">
+                </path>
+            </svg>
+        </div>
+        <div class="mountain">
+            <svg width="100%" viewBox="0 0 113.39 36.85">
+                <path id="mountain" fill="#87D6D6"
+                d="m113.47985,3.81248c-5.395,2.222 -17.64285,12.45652 -24.82485,11.18752c-7.365,-1.301 -20.603,-8.756 -26.345,-11.361c-5.744,-2.603 -20.355,12.781 -25.475,12.309c-5.118,-0.474 -17.355,-9.232 -23.475,-8.403c-3.964,0.537 -10.65439,4.276 -13.66339,6.844l-0.50659,22.48959l114.30073,-0.81054l-0.0109,-32.25557z">
+                </path>
+            </svg>
+        </div>
+        <div class="hill">
+            <svg width="100%" viewBox="0 0 113.39 17.86">
+                <path id="hill" fill="#38C6B1"
+                d="m111.971,12.132c-4.609,-0.766 -8.889,-1.889 -12.432,-3.579c-13.412,-8.913 -28.059,-12.159 -56.457,-2.243c-6.086,0.811 -7.853,0.51 -17.234,-2.951c-7.361,-2.715 -18.62607,-2.24259 -25.97107,-0.79759l0.05959,15.34613l112.03347,-0.26954l0,-5.506l0.001,0z">
+                </path>
+            </svg>
+        </div>
+        <div class="land">
+            <svg width="100%" viewBox="0 0 113.39 24.09">
+                <path id="land" fill="#4CB5AB"
+                d="m113.39659,24.20204l-0.01466,-20.16858c-27.106,-10.288 -102.38586,7.55517 -113.37386,10.49817l0,9.6411l113.38851,0.02931z"></path>
+            </svg>
+        </div>
+        <div class="trees">
+            <svg width="100%" viewBox="0 0 85.04 41.1">
+                <g>
+                    <rect class="trunks" x="75.121" y="26.724" fill="#8C5F50" width="2.166" height="8.666" />
+                    <rect class="trunks" x="67.539" y="28.89" fill="#8C5F50" width="2.168" height="6.5" />
+                </g>
+                <g>
+                    <path class="trees" fill="#A0D755"
+                        d="M83.785,21.309c0,4.187-3.393,7.581-7.58,7.581s-7.582-3.395-7.582-7.581 c0-9.749,3.395-20.579,7.582-20.579S83.785,11.56,83.785,21.309z">
+                    </path>
+                    <path class="trees" fill="#A0D755"
+                        d="M75.121,24.933c0,3.382-2.91,6.125-6.5,6.125c-3.588,0-6.498-2.743-6.498-6.125     c0-7.873,2.91-16.622,6.498-16.622C72.211,8.311,75.121,17.06,75.121,24.933z">
+                    </path>
+                </g>
+                <g opacity="0.2">
+                    <path fill="#FFFFFF"
+                        d="M72.955,21.309c0-8.892,1.883-18.68,4.332-20.333c-0.354-0.16-0.715-0.247-1.082-0.247     c-4.188,0-7.582,10.83-7.582,20.579c0,4.187,3.395,7.581,7.582,7.581c0.369,0,0.729-0.035,1.082-0.086     C74.84,28.277,72.955,25.127,72.955,21.309z">
+                    </path>
+                    <path fill="#FFFFFF"
+                        d="M66.457,24.933c0-7.106,1.383-14.901,3.191-16.359c-0.334-0.157-0.676-0.263-1.025-0.263     c-3.588,0-6.5,8.749-6.5,16.622c0,3.382,2.912,6.125,6.5,6.125c0.35,0,0.691-0.034,1.025-0.084     C67.84,30.508,66.457,27.984,66.457,24.933z">
+                    </path>
+                </g>
+                <g>
+                    <rect class="trunks" x="3.466" y="35.946" fill="#8C5F50" width="1.475" height="4.424" />
+                    <path class="trees" fill="#A0D755"
+                        d="M7.153,34.472c0,1.628-1.32,2.949-2.949,2.949S1.254,36.1,1.254,34.472c0-5.162,1.32-11.799,2.949-11.799     S7.153,29.31,7.153,34.472z">
+                    </path>
+                    <path opacity="0.2" fill="#FCFCFC"
+                        d="M3.466,34.472c0-4.233,0.666-9.452,1.58-11.194c-0.267-0.383-0.55-0.604-0.842-0.604    c-1.629,0-2.949,6.637-2.949,11.799c0,1.628,1.32,2.949,2.949,2.949c0.295,0,0.573-0.057,0.842-0.137    C4.135,36.919,3.466,35.806,3.466,34.472z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+        <div class="card">
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Enter city name">
+                <button>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.5em"
+                        width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M505.04 442.66l-99.71-99.69c-4.5-4.5-10.6-7-17-7h-16.3c27.6-35.3 44-79.69 44-127.99C416.03 93.09 322.92 0 208.02 0S0 93.09 0 207.98s93.11 207.98 208.02 207.98c48.3 0 92.71-16.4 128.01-44v16.3c0 6.4 2.5 12.5 7 17l99.71 99.69c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.59.1-33.99zm-297.02-90.7c-79.54 0-144-64.34-144-143.98 0-79.53 64.35-143.98 144-143.98 79.54 0 144 64.34 144 143.98 0 79.53-64.35 143.98-144 143.98zm.02-239.96c-40.78 0-73.84 33.05-73.84 73.83 0 32.96 48.26 93.05 66.75 114.86a9.24 9.24 0 0 0 14.18 0c18.49-21.81 66.75-81.89 66.75-114.86 0-40.78-33.06-73.83-73.84-73.83zm0 96c-13.26 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="weather loading">
+                <h2 class="city">Weather in Delhi</h2>
+                <div class="content">
+                    <span>
+                        <h1 class="temp">41°C</h1>
+                    </span>
+                    <span class="info">
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="icon" />
+                        <div class="description">Widespread Dust</div>
+                        <div class="humidity">Humidity: 19%</div>
+                        <div class="wind">Wind: 11 km/h</div>
+                    </span> 
+                </div>  
+            </div>
+        </div>
+    </main>
+    <nav>
+        <h1>MaiWeather</h1>
+        <div class="dropdown">
+            <button class="dropdown-button">Theme</button>
+            <div class="dropdown-content">
+                <button class="morning-button">Morning</button> 
+                <button class="day-button">Day</button> 
+                <button class="evening-button">Evening</button> 
+                <button class="night-button">Night</button> 
+            </div>
+        </div>
+    </nav>
+    <script src="weather.js"></script>
+</body>
+
+</html>
